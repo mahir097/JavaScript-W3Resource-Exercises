@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <span>1st Number </span>
+      <input type="text" id="firstNumber" /><br /><br />
+      <span>2nd Number </span>
+      <input type="text" id="secondNumber" /><br /><br />
+      <input type="button" onclick="multiply()" value="Çarpım" />
+      <input type="button" onclick="divide()" value="Bölme" />
+    </form>
+    <p>
+      The Result is: <br />
+      <span id="result"></span>
+    </p>
+
+    <script>
+      function multiply() {
+        let a = document.getElementById("firstNumber").value;
+        let b = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = a * b;
+      }
+      function divide() {
+        let a = document.getElementById("firstNumber").value;
+        let b = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = a / b;
+      }
+    </script>
+  </body>
+</html>
