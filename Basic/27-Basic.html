@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Start Java</title>
+  </head>
+  <body>
+    <script>
+      function check(str) {
+        if (str.length < 4) {
+          console.log("false");
+        }
+        let a = str.substring(0, 4);
+        if (a == "Java") {
+          console.log("True");
+        } else {
+          console.log("false");
+        }
+      }
+
+      check("Javascript");
+      check("Java");
+      check("Python");
+    </script>
+  </body>
+</html>

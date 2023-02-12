@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last 3 character front and back</title>
+  </head>
+  <body>
+    <script>
+      function three(str) {
+        if (str.length >= 3) {
+          let a = str.substring(str.length - 3);
+          console.log(a + str + a);
+        } else {
+          console.log("false");
+        }
+      }
+
+      three("abc");
+      three("ab");
+      three("abcd");
+    </script>
+  </body>
+</html>

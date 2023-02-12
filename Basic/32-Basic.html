@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nearest to 100</title>
+  </head>
+  <body>
+    <script>
+      function near(nmbr1, nmbr2) {
+        let a = Math.abs(100 - nmbr1);
+        let b = Math.abs(100 - nmbr2);
+        if (a < b) {
+          console.log(nmbr1);
+        } else if (b < a) {
+          console.log(nmbr2);
+        } else if ((a = b)) {
+          console.log(nmbr1 + "-" + nmbr2);
+        }
+      }
+      near(90, 89);
+      near(89, 90);
+      near(90, 90);
+    </script>
+  </body>
+</html>

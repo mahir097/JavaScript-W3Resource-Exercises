@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>40-60 Range Biggest Number</title>
+  </head>
+  <body>
+    <script>
+      function range(n1, n2) {
+        if (n1 >= 40 && n1 <= 60 && n2 >= 40 && n2 <= 60) {
+          if (n1 > n2) {
+            console.log(n1);
+          } else if (n2 > n1) {
+            console.log(n2);
+          } else if (n1 == n2) {
+            console.log("Same numbers: " + n1);
+          }
+        } else {
+          console.log("Numbers don't fit in range");
+        }
+      }
+      range(45, 60);
+      range(25, 60);
+      range(45, 80);
+      range(45, 45);
+    </script>
+  </body>
+</html>

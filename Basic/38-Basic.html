@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final-Exam</title>
+  </head>
+  <body>
+    <script>
+      let exam = {
+        name: "Final-exam",
+        marks: 90,
+      };
+
+      function getGrade(exam) {
+        if (exam.marks > 100) {
+          return "Marks can't large than 100";
+        }
+
+        if (exam.name === "Final-exam" && exam.marks >= 90) {
+          return true;
+        }
+
+        if (exam.name !== "Final-exam" && exam.marks >= 80) {
+          return true;
+        }
+
+        return false;
+      }
+      console.log(getGrade(exam));
+    </script>
+  </body>
+</html>

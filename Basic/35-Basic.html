@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contains Character</title>
+  </head>
+  <body>
+    <script>
+      const x = (str1, char) => str1.slice(1, 4).includes(char);
+      console.log(x("Python", "y"));
+      console.log(x("JavaScript", "a"));
+      console.log(x("Console", "o"));
+      console.log(x("Console", "C"));
+      console.log(x("Console", "e"));
+      console.log(x("JavaScript", "S"));
+    </script>
+  </body>
+</html>
