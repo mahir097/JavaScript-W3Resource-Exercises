@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to create a new string from a given string,
+      removing the first and last characters of the string if the first or last
+      character are 'P'. Return the original string if the condition is not
+      satisfied.
+    </title>
+  </head>
+  <body>
+    <script>
+      function str(x) {
+        if (x.slice(1) === "p" || x.slice(-1) === "p") {
+          return x.slice(1, -1);
+        } else {
+          return x;
+        }
+      }
+
+      console.log(str("paap"));
+      console.log(str("papichulo"));
+    </script>
+  </body>
+</html>

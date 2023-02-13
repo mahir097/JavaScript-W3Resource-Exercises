@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to count the number of vowels in a given
+      string.
+    </title>
+  </head>
+  <body>
+    <script>
+      function getVowels(str) {
+        var vowelsCount = 0;
+
+        //turn the input into a string
+        var string = str.toString();
+
+        //loop through the string
+        for (var i = 0; i <= string.length - 1; i++) {
+          //if a vowel, add to vowel count
+          if (
+            string.charAt(i) == "a" ||
+            string.charAt(i) == "e" ||
+            string.charAt(i) == "i" ||
+            string.charAt(i) == "o" ||
+            string.charAt(i) == "u"
+          ) {
+            vowelsCount += 1;
+          }
+        }
+        return vowelsCount;
+      }
+      console.log(getVowels("Python"));
+    </script>
+  </body>
+</html>

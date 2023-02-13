@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to swap the first and last elements of a given
+      array of integers. The array length should be at least 1.
+    </title>
+  </head>
+  <body>
+    <script>
+      function swap(arr) {
+        let save = arr[0];
+        arr.splice(0, 1, arr[arr.length - 1]);
+        arr.splice(arr.length - 1, 1, save);
+        return arr;
+      }
+      console.log(swap([1, 2, 3, 4]));
+      //[4, 2, 3, 1]
+    </script>
+  </body>
+</html>
