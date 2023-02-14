@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function addTwoPosInte(num1, num2) {
+        let arr1 = num1.toString().split("");
+        let arr2 = num2.toString().split("");
+        let addArr = [];
+        for (let i = 0; i < arr1.length; i++) {
+          let elem = Number(arr1[i]) + Number(arr2[i]);
+          if (elem >= 10) elem = Math.trunc(elem / 10);
+          addArr.push(elem);
+        }
+        return addArr.join("");
+      }
+
+      console.log(addTwoPosInte(923, 567)); // 181
+    </script>
+  </body>
+</html>

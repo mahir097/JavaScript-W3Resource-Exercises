@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program that takes two integers and a divisor. If the
+      given divisor divides both integers and it does not divide either, then
+      two given integers are similar. Check whether two given integers are
+      similar or not.
+    </title>
+  </head>
+  <body>
+    <script>
+      function checkingNumbers(n1, n2, div) {
+        if (n1 % div === 0 && n2 % div === 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log(checkingNumbers(10, 25, 5));
+      console.log(checkingNumbers(10, 20, 5));
+      console.log(checkingNumbers(10, 20, 4));
+    </script>
+  </body>
+</html>
