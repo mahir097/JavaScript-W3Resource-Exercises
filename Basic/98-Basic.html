@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to switch case of the minimum possible number
+      of letters to make a given string written in the upper case or in the
+      lower case.
+    </title>
+  </head>
+  <body>
+    <script>
+      function switchCase(str) {
+        let upperCaseCount = 0;
+        let lowerCaseCount = 0;
+        for (let i = 0; i < str.length; i++) {
+          if (str[i] == str[i].toUpperCase()) {
+            upperCaseCount++;
+          } else {
+            lowerCaseCount++;
+          }
+        }
+        if (upperCaseCount > lowerCaseCount) {
+          return str.toUpperCase();
+        } else {
+          return str.toLowerCase();
+        }
+      }
+      console.log(switchCase("abC"));
+      console.log(switchCase("ABc"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to find the number of times to replace a given
+      number with the sum of its digits until it convert to a single digit
+      number.
+    </title>
+  </head>
+  <body>
+    <script>
+      function count_single_sum(num) {
+        let counter = 0;
+        let sum;
+        let str_num = String(num);
+        while (str_num.length > 1) {
+          sum = 0;
+          for (let i = 0; i < str_num.length; i++) {
+            sum += Number(str_num[i]);
+          }
+          counter++;
+          str_num = String(sum);
+        }
+        return counter;
+      }
+
+      console.log(count_single_sum(123)); // 1
+      console.log(count_single_sum(156)); // 2
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to find the number which appears most in a
+      given array of integers.
+    </title>
+  </head>
+  <body>
+    <script>
+      function most_appears(nums) {
+        let max = 0;
+        let count = 0;
+        let result = 0;
+
+        for (var i = 0; i < nums.length; i++) {
+          for (var j = 0; j < nums.length; j++) {
+            if (nums[i] == nums[j]) {
+              count += 1;
+            }
+          }
+          if (count > max) {
+            result = nums[i];
+            max = count;
+          }
+          count = 0;
+        }
+        return result;
+      }
+
+      console.log(most_appears([1, 2, 3, 2, 2, 8, 1, 9]));
+    </script>
+  </body>
+</html>

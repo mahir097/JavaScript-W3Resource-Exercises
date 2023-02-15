@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to find the maximal number from a given
+      positive integer by deleting exactly one digit of the given number.
+    </title>
+  </head>
+  <body>
+    <script>
+      function findMaximal2(n) {
+        let arr = n.toString().split("");
+        arr.sort();
+        let smallest = arr[0];
+        let str = n.toString();
+        let del = str.replace(smallest, "");
+        return del;
+      }
+      console.log(findMaximal2(132));
+    </script>
+  </body>
+</html>

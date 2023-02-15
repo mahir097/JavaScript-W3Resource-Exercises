@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write a JavaScript program to find the shortest possible string which can
+      create a string to make it a palindrome by adding characters to the end of
+      it.
+    </title>
+  </head>
+  <body>
+    <script>
+      function palindrome(str) {
+        let x = str.split("");
+        let y = str.length - 2;
+        for (let i = y; i >= 0; i--) {
+          x.push(x[i]);
+        }
+        x.join("");
+        return x;
+      }
+      console.log(palindrome("word"));
+    </script>
+  </body>
+</html>
